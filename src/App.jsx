@@ -28,14 +28,7 @@ function App() {
       label: 'Red',
       data: 3
     },
-    {
-      label: 'Blue',
-      data: 1
-    },
-    {
-      label: 'Yellow',
-      data: 8
-    }
+
   ])
 
   return (
@@ -44,7 +37,7 @@ function App() {
         <div className="graph__container container">
           <h1 className="title">Графика</h1>
           <div className="content">
-            <ChartInput data={chartData}/>
+            <ChartInput data={chartData} setData={setChartData}/>
             <ChartDisplay data={chartData}/>
           </div>
         </div>

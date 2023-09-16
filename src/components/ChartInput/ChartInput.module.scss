@@ -4,9 +4,34 @@
   gap: 25px;
 }
 
-
-
 .title{
   font-size: 32px;
   align-self: flex-start;
+}
+
+.buttons{
+  display: flex;
+  gap: 25px;
+}
+.button{
+  width: 100%;
+  font-size: 16px;
+}
+
+.content{
+  display: flex;
+  justify-content: space-between;
+}
+.list{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.contentButtons{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  gap: 25px;
 }

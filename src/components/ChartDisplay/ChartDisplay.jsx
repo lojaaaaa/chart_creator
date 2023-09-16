@@ -32,8 +32,6 @@ function ChartDisplay({ data }) {
     },
   };
 
-
-
   return (
     <div className={styles.graphics}>
       <h2 className={styles.title}>Отображение графики</h2>

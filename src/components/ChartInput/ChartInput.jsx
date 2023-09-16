@@ -19,7 +19,10 @@ const ChartInput = ({data, setData}) => {
       <div className={styles.content}>
         <div className={styles.list}>
           {data.map((el, index) => 
-            <ChartItem 
+            <ChartItem
+              id={index}
+              data={data}
+              setData={setData}
               key={index}
               label={el.label}
               value={el.data}
@@ -33,7 +36,7 @@ const ChartInput = ({data, setData}) => {
       </div>
       <div className={styles.buttons}>
         <button onClick={onAddNewField} className={styles.button}>Добавить</button>
-        <button onClick={onDeleteNewField} className={styles.button}>Удалить</button>
+        <button onClick={onDeleteNewField} disabled={data.length === 1 && true} className={styles.button}>Удалить</button>
       </div>
     </div>
   )

@@ -1,0 +1,15 @@
+.item{
+  display: flex;
+}
+
+.input{
+  width: 100%;
+  outline: none;
+  font-size: 18px;
+  padding: 18px 15px;
+  background-color: transparent;
+  border: 2px solid rgb(53, 53, 53);
+}
+.input:last-child{
+  border-left: 0;
+}

@@ -11,14 +11,41 @@ function App() {
   //   setChartData(data);
   // };
 
+  const [chartData, setChartData] = useState([
+    {
+      label: 'Red',
+      data: 3
+    },
+    {
+      label: 'Blue',
+      data: 1
+    },
+    {
+      label: 'Yellow',
+      data: 8
+    },
+    {
+      label: 'Red',
+      data: 3
+    },
+    {
+      label: 'Blue',
+      data: 1
+    },
+    {
+      label: 'Yellow',
+      data: 8
+    }
+  ])
+
   return (
     <div className="wrapper">
       <section className="graph">
         <div className="graph__container container">
           <h1 className="title">Графика</h1>
           <div className="content">
-            <ChartInput />
-            <ChartDisplay />
+            <ChartInput data={chartData}/>
+            <ChartDisplay data={chartData}/>
           </div>
         </div>
       </section>

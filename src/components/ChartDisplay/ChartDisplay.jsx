@@ -6,10 +6,10 @@ import styles from './ChartDisplay.module.scss'
 
 function ChartDisplay({ data }) {
   const chartData = {
-    title: 'fdfdf',
     labels: data.map(d => d.label),
     datasets: [
-      { 
+      {     
+        fill: true,
         label: 'Данные',
         backgroundColor: 'rgba(75, 192, 192, 0.2)',
         borderColor: 'rgba(75, 192, 192, 1)',
@@ -35,7 +35,8 @@ function ChartDisplay({ data }) {
   return (
     <div className={styles.graphics}>
       <h2 className={styles.title}>Отображение графики</h2>
-      <Bar className={styles.graph} options={options} data={chartData} />
+      {/* <Bar className={styles.graph} options={options} data={chartData} /> */}
+      <Line className={styles.graph} options={options} data={chartData} />
     </div>
   );
 }
